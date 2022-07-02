@@ -1,0 +1,5 @@
+
+
+docker run -it -p 9696:9696 --entrypoint gunicorn churn-prediction --bind 0.0.0.0:9696 churn_flask:app
+
+to run with different entry point we enter a docker command after --entrypoint then the image name and then the command arguments
